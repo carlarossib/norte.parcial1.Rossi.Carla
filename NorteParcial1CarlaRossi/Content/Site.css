@@ -49,42 +49,23 @@ em {
     margin: 0 auto;
 }
 
-.logo {
-    width: 150px;
-    height: 40px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+.cosmo {
+    /*padding: 30px;*/
+    display: block;
+    margin: auto;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-    nav ul li {
-        list-style: none;
-        display: inline;
-    }
-
-        nav ul li > a {
-            padding: 5px;
-            text-decoration: none;
-            background-color: powderblue;
-            border-radius: 5px;
-            margin-left: 5px;
-        }
 
 header {
     display: block;
-    background-color: #6793ec;
+    background-color: #286af0;
     padding: 10px 0px;
 }
 
 section {
-    background-color: #fafafa;
+    background-color: #ccc;
     padding: 5px;
     overflow: auto;
-    /*float: left;*/
     float: right;
     width: 79%;
     margin-top: 5px;
@@ -93,7 +74,6 @@ section {
 }
 
 aside {
-    /*float: right;*/
     float: left;
     width: 19%;
     margin-top: 5px;
@@ -104,7 +84,7 @@ footer {
     clear: both;
     position: relative;
     height: 40px;
-    background-color: #6793ec;
+    background-color: #286af0;
     text-align: center;
     color: #fafafa;
 }
