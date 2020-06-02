@@ -14,11 +14,6 @@ img {
     border: none;
 }
 
-/*p {
-    text-align: justify;
-}*/
-
-/*clase anterior*/
 h1 {
     font-family: Verdana, Calibri, sans-serif;
     font-size: 1.2em
@@ -50,9 +45,12 @@ em {
 }
 
 .cosmo {
-    /*padding: 30px;*/
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 35%;
+
 }
 
 
@@ -87,24 +85,5 @@ footer {
     background-color: #286af0;
     text-align: center;
     color: #fafafa;
-}
-
-.button-success, .button-error, .button-default {
-    color: #fff;
-    border-radius: 5px;
-    font-size: 85%;
-    height: 35px;
-}
-
-.color-success {
-    background: rgb(28,185,65);
-}
-
-.color-error {
-    background: rgb(255, 0, 0);
-}
-
-.color-default {
-    background: rgb(237, 227, 227);
-    color: #000;
+    text-decoration-line: underline;
 }

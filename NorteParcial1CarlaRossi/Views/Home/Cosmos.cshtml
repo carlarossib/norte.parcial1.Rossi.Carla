@@ -15,7 +15,7 @@
         <tr>
             <th>Siglo</th>
             <td>
-                <input type="text" id="txtCodigo" placeholder="Siglo de descubrimiento">
+                <input type="text" id="txtSiglo" placeholder="Siglo de descubrimiento">
             </td>
         </tr>
         <tr>
@@ -40,17 +40,17 @@
 
 <hr />
 
-<a href="/Home/Index">Index</a>
+<a href="/Home/Index">INDEX...</a>
 <hr />
 
 <script>
 
     class MiObjeto {
-        Codigo;
+        Siglo;
         Nombre;
 
-        Fill(cod, nom) {
-            this.Codigo = cod;
+        Fill(sig, nom) {
+            this.Siglo = sig;
             this.Nombre = nom;
         }
     }
@@ -59,17 +59,17 @@
     var ilista = 0;
 
     function Guardar() {
-        var codigo = document.getElementById('txtCodigo').value;
+        var siglo = document.getElementById('txtSiglo').value;
         var Nombre = document.getElementById('txtNombre').value;
-        if (codigo != "" && Nombre != "") {
+        if (siglo != "" && Nombre != "") {
             var o = new MiObjeto();
-            o.Fill(codigo, Nombre);
+            o.Fill(siglo, Nombre);
             lista.push(o);
             ilista++;
+            $("#txtSiglo").val("");
+            $("#txtNombre").val("");
         }
-
     }
-
 
     function MostrarLista() {
 
@@ -77,12 +77,12 @@
             limpiar();
             var html = '';
             //html += 'Lista de Objetos';
-            html += '<ul >'
+            //html += '<ul >'
             for (var i = 0; i < lista.length; i++) {
-                html += '<li> Codigo:' + lista[i].Codigo + '&#8195 Nombre: ' + lista[i].Nombre + ' </li>';
+                html += 'Siglo:' + lista[i].Siglo + " - " +  'Nombre: ' + lista[i].Nombre + '' + "<br />";
             }
 
-            html += '</ul>';
+            //html += '</ul>';
 
             $('#DivLista').append(html);
         }
